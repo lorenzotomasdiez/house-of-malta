@@ -1,0 +1,135 @@
+---
+import NavbarLink from './NavbarLink.astro'
+---
+
+<nav
+  class="absolute top-0 left-0 w-full bg-transparent lg:hover:bg-primary/80 transition-colors duration-300 z-50 lg:border-b lg:border-white/40"
+>
+  <div class="container mx-auto grid grid-cols-2 items-center max-w-screen-xl">
+    <div class="col-span-1 flex justify-center items-center lg:py-8">
+      <a href="/#home" class="text-tertiary text-xl font-semibold lg:text-3xl"
+        >House of Gozo</a
+      >
+    </div>
+    <div
+      class="col-span-1 hidden lg:flex items-center space-x-8 text-lg font-medium h-full"
+    >
+      <NavbarLink id="top" href="#top" class="navbar-link">
+        Top Posters
+      </NavbarLink>
+      <NavbarLink id="all" href="#all" class="navbar-link">
+        All Posters
+      </NavbarLink>
+      <NavbarLink id="about" href="#about" class="navbar-link">
+        About
+      </NavbarLink>
+      <NavbarLink id="contact" href="#contact" class="navbar-link">
+        Contact
+      </NavbarLink>
+    </div>
+    <div class="col-span-1 flex justify-end lg:hidden">
+      <button
+        id="menu-toggle"
+        class="text-tertiary focus:outline-none flex items-center bg-primary p-2 rounded-bl-md"
+      >
+        <span class="mr-2 text-xs">Menu</span>
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div
+    id="menu"
+    class="lg:hidden fixed inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center transition-opacity duration-300 opacity-0 pointer-events-none z-50"
+    aria-hidden="true"
+  >
+    <div
+      class="h-screen flex flex-col w-4/5 ml-auto border-l border-tertiary/30 bg-gray-800 rounded-tl-md shadow-lg"
+    >
+      <div class="p-4 bg-primary border-b">
+        <span class="text-tertiary text-2xl font-bold">Menu</span>
+      </div>
+      <div class="flex-grow overflow-y-auto divide-y divide-gray-700">
+        <a
+          href="#"
+          class="block text-tertiary text-lg p-4 hover:bg-primary hover:text-white transition-colors"
+        >
+          Home
+        </a>
+        <a
+          href="#"
+          class="block text-tertiary text-lg p-4 hover:bg-primary hover:text-white transition-colors"
+        >
+          About
+        </a>
+        <a
+          href="#"
+          class="block text-tertiary text-lg p-4 hover:bg-primary hover:text-white transition-colors"
+        >
+          Services
+        </a>
+        <a
+          href="#"
+          class="block text-tertiary text-lg p-4 hover:bg-primary hover:text-white transition-colors"
+        >
+          Contact
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle')
+    const menu = document.getElementById('menu')
+    const menuLinks = menu?.querySelectorAll('a')
+
+    function toggleMenu() {
+      menu?.classList.toggle('opacity-0')
+      menu?.classList.toggle('pointer-events-none')
+      document.body.classList.toggle('overflow-hidden')
+    }
+
+    function closeMenu() {
+      menu?.classList.add('opacity-0', 'pointer-events-none')
+      document.body.classList.remove('overflow-hidden')
+    }
+
+    menu?.addEventListener('click', closeMenu)
+
+    menuToggle?.addEventListener('click', toggleMenu)
+
+    menuLinks?.forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.stopPropagation()
+        closeMenu()
+      })
+    })
+  </script>
+</nav>
+
+<script>
+  function handleHashChange() {
+    const hash = window.location.hash
+    const links = document.querySelectorAll('.navbar-link')
+    links.forEach((link) => {
+      link.classList.remove('border-b-2', 'border-white')
+    })
+    const selectedLink = document.querySelector(`#${hash.slice(1)}`)
+    if (selectedLink) {
+      selectedLink.classList.add('border-b-2', 'border-white')
+    }
+  }
+
+  window.addEventListener('hashchange', handleHashChange)
+</script>
