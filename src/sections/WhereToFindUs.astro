@@ -1,0 +1,47 @@
+---
+import { ClockIcon, MapIcon } from 'lucide-react'
+---
+
+<section
+  class="container mx-auto bg-white relative lg:rounded-xl w-full overflow-hidden"
+  id="where-to-find-us"
+>
+  <img
+    src="/house.jpg"
+    alt="house-of-gozo"
+    class="absolute inset-0 w-full h-full object-cover object-top"
+  />
+  <div class="absolute top-0 left-0 w-full h-full bg-black/70 z-20"></div>
+
+  <div
+    class="bg-transparent z-30 relative py-10 px-12 lg:rounded-xl lg:bg-primary max-w-[753px] mx-auto lg:mt-[341px] lg:mb-[50px] lg:ml-[50px]"
+  >
+    <h4 class="text-white text-xl font-semibold mb-5">Where to find us</h4>
+    <p class="text-white text-sm mb-10">
+      Visit our valleta galery to explore exclusive maltesse Art posters. Open
+      daily, showcasing malta's beauty and culture.
+    </p>
+    <div class="flex gap-2 items-center mb-8">
+      <div
+        class="bg-white rounded-md w-14 h-14 aspect-square flex items-center justify-center"
+      >
+        <MapIcon size={25} className="text-primary" />
+      </div>
+      <div class="flex flex-col gap-1">
+        <p class="text-white text-sm">We are located</p>
+        <p class="text-white text-xs">123 republic street, valleta, malta</p>
+      </div>
+    </div>
+    <div class="flex gap-2 items-center">
+      <div
+        class="bg-white rounded-md w-14 h-14 aspect-square flex items-center justify-center"
+      >
+        <ClockIcon size={25} className="text-primary" />
+      </div>
+      <div class="flex flex-col gap-1">
+        <p class="text-white text-sm">Working hours</p>
+        <p class="text-white text-xs">Open Monday to Saturday, 10am - 6pm</p>
+      </div>
+    </div>
+  </div>
+</section>

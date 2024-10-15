@@ -1,17 +1,35 @@
 ---
 import '@/styles/global.css'
-import Layout from '../layouts/Layout.astro'
-import Hero from '../sections/Hero.astro'
-import TopPosters from '../sections/TopPosters'
+import Layout from '@/layouts/Layout.astro'
+import Hero from '@/sections/Hero.astro'
+import TopPosters from '@/sections/TopPosters'
 import AllPosters from '@/sections/AllPosters.astro'
+import WhereToFindUs from '@/sections/WhereToFindUs.astro'
+import WhoWeAre from '@/sections/WhoWeAre.astro'
+import Quality from '@/sections/Quality.astro'
+import Footer from '@/sections/Footer.astro'
 ---
 
 <Layout title="House of Gozo">
-  <Hero />
-  <TopPosters client:load />
-  <!-- DIVIDER HERE -->
-  <div class="w-full px-10">
-    <div class="h-[1px] w-full bg-gray-300"></div>
+  <div class="flex flex-col gap-[100px]">
+    <Hero />
+    <TopPosters client:load />
+    <div class="w-full px-10">
+      <div class="h-[1px] w-full bg-gray-300"></div>
+    </div>
+    <AllPosters />
+    <div class="w-full px-10">
+      <div class="h-[1px] w-full bg-gray-300"></div>
+    </div>
+    <WhereToFindUs />
+    <div class="w-full px-10">
+      <div class="h-[1px] w-full bg-gray-300"></div>
+    </div>
+    <WhoWeAre />
+    <div class="w-full px-10">
+      <div class="h-[1px] w-full bg-gray-300"></div>
+    </div>
+    <Quality />
+    <Footer />
   </div>
-  <AllPosters />
 </Layout>

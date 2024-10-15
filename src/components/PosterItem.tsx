@@ -6,9 +6,9 @@ export default function PosterItem({ src, alt, title, description, realSrc, real
   const [isFlipped, setIsFlipped] = useState(false)
 
   return (
-    <div className="flex flex-col gap-5 items-center justify-center">
+    <div className="flex flex-col gap-5 items-center justify-center mx-5">
       <div
-        className="[perspective:1000px] relative bg-poster-bg rounded-xl p-10"
+        className="[perspective:1000px] relative bg-poster-bg rounded-xl p-10 shadow-xl shadow-black/10"
         onMouseEnter={() => setIsFlipped(true)}
         onMouseLeave={() => setIsFlipped(false)}
       >

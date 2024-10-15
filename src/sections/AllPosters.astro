@@ -3,13 +3,11 @@ import PosterItem from '@/components/PosterItem'
 import { posters } from '@/lib/utils'
 ---
 
-<section class="container mx-auto py-[50px] bg-white" id="top">
-  <h2 class="text-2xl font-semibold px-4 lg:text-4xl text-center my-[100px]">
+<section class="container mx-auto bg-white" id="top">
+  <h2 class="text-2xl font-semibold px-4 lg:text-4xl text-center my-[50px]">
     All Posters
   </h2>
-  <div
-    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-  >
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
     {posters.map((poster) => <PosterItem {...poster} client:load />)}
   </div>
 </section>

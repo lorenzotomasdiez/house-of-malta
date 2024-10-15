@@ -11,14 +11,10 @@ import {
 import PosterItem from "./PosterItem"
 import { topPosters } from "@/lib/utils"
 
-interface PosterCarrouselProps {
-  refToNext: React.RefObject<HTMLButtonElement>
-  refToPrevious: React.RefObject<HTMLButtonElement>
-}
 
-export default function PosterCarrousel({ refToNext, refToPrevious }: PosterCarrouselProps) {
+export default function PosterCarrousel() {
   return (
-    <div className="w-full max-w-full overflow-hidden my-10">
+    <div className="w-full max-w-full overflow-hidden my-5">
       <Carousel
         opts={{
           align: "start",
@@ -46,8 +42,8 @@ export default function PosterCarrousel({ refToNext, refToPrevious }: PosterCarr
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious hidden ref={refToPrevious} />
-        <CarouselNext hidden ref={refToNext} />
+        <CarouselPrevious hidden />
+        <CarouselNext hidden />
       </Carousel>
     </div>
   )
