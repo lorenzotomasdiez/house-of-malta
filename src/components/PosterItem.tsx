@@ -1,5 +1,4 @@
 import type { Poster } from "@/lib/utils"
-import * as React from "react"
 import { useState } from "react"
 
 export default function PosterItem({ src, alt, title, description, realSrc, realAlt }: Poster) {

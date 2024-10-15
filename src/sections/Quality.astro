@@ -1,30 +1,24 @@
 ---
-import { LucideCheck, type LucideIcon } from 'lucide-react'
-import pencilWeird from '../assets/pencil-weird.svg'
-import productQuality from '../assets/product-quality.svg'
-import diamond from '../assets/diamond.svg'
-import { Image } from 'astro:assets'
-
 type Item = {
-  icon: ImageMetadata
+  icon: string
   title: string
   description: string
 }
 const items: Item[] = [
   {
-    icon: pencilWeird,
+    icon: '/assets/pencil-weird.svg',
     title: 'Unique Designs',
     description:
       'Our posters are crafted with care and attention to detail, ensuring that each one is a true representation of the Maltese Islands.',
   },
   {
-    icon: productQuality,
+    icon: '/assets/product-quality.svg',
     title: 'Premium Quality',
     description:
       'We use only the highest quality materials and printing techniques to ensure that our posters are of the highest quality.',
   },
   {
-    icon: diamond,
+    icon: '/assets/diamond.svg',
     title: 'Customer Satisfaction',
     description:
       'We are committed to ensuring that our customers are satisfied with their purchase. If you are not satisfied with your purchase, we will refund your money.',
@@ -37,7 +31,7 @@ const items: Item[] = [
     {
       items.map((item) => (
         <div class="flex flex-col justify-center items-center gap-4 bg-neutral-100 py-14 px-9 rounded-xl text-secondary text-center">
-          <Image
+          <img
             src={item.icon}
             alt={item.title}
             class="w-[113px] aspect-square"
