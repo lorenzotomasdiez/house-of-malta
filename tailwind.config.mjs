@@ -33,7 +33,8 @@ export default {
     		colors: {
     			primary: {
     				DEFAULT: 'hsl(var(--primary))',
-    				foreground: 'hsl(var(--primary-foreground))'
+    				foreground: 'hsl(var(--primary-foreground))',
+						lighter: "#290d16"
     			},
     			secondary: {
     				DEFAULT: 'hsl(var(--secondary))',

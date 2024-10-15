@@ -26,18 +26,18 @@ const items: Item[] = [
 ]
 ---
 
-<section class="container mx-auto bg-white px-[50px]" id="quality">
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<section class="container mx-auto px-[50px]" id="quality">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
     {
       items.map((item) => (
-        <div class="flex flex-col justify-center items-center gap-4 bg-neutral-100 py-14 px-9 rounded-xl text-secondary text-center">
+        <div class="flex flex-col justify-center items-center gap-4 bg-primary-lighter py-14 px-9 rounded-xl text-center">
           <img
             src={item.icon}
             alt={item.title}
-            class="w-[113px] aspect-square"
+            class="w-[113px] aspect-square text-secondary bg-white rounded-xl p-2"
           />
-          <h3 class="text-2xl font-semibold">{item.title}</h3>
-          <p class="text-lg">{item.description}</p>
+          <h3 class="text-2xl font-semibold text-secondary">{item.title}</h3>
+          <p class="text-lg text-secondary">{item.description}</p>
         </div>
       ))
     }

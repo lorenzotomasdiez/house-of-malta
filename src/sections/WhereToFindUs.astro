@@ -1,9 +1,14 @@
 ---
-import { ClockIcon, MapIcon } from 'lucide-react'
+import {
+  ArrowRight,
+  ArrowRightFromLine,
+  ClockIcon,
+  MapIcon,
+} from 'lucide-react'
 ---
 
 <section
-  class="container mx-auto bg-white relative lg:rounded-xl w-full overflow-hidden"
+  class="container mx-auto relative lg:rounded-3xl w-full overflow-hidden"
   id="where-to-find-us"
 >
   <img
@@ -11,12 +16,18 @@ import { ClockIcon, MapIcon } from 'lucide-react'
     alt="house-of-gozo"
     class="absolute inset-0 w-full h-full object-cover object-top"
   />
-  <div class="absolute top-0 left-0 w-full h-full bg-black/70 z-20"></div>
+  <div
+    class="absolute top-0 left-0 w-full h-full bg-black/70 lg:hover:bg-black/40 z-20 transition-all duration-1000"
+  >
+  </div>
 
   <div
-    class="bg-transparent z-30 relative py-10 px-12 lg:rounded-xl lg:bg-primary max-w-[753px] mx-auto lg:mt-[341px] lg:mb-[50px] lg:ml-[50px]"
+    class="bg-transparent z-30 relative py-10 px-12 lg:rounded-3xl lg:bg-primary-lighter max-w-[753px] mx-auto lg:mt-[341px] lg:mb-[50px] lg:ml-[50px]"
   >
-    <h4 class="text-white text-xl font-semibold mb-5">Where to find us</h4>
+    <div class="flex items-center justify-start gap-2 mb-5">
+      <ArrowRight size={25} className="text-secondary" />
+      <h4 class="text-secondary text-xl font-semibold">Where to find us</h4>
+    </div>
     <p class="text-white text-sm mb-10">
       Visit our valleta galery to explore exclusive maltesse Art posters. Open
       daily, showcasing malta's beauty and culture.
