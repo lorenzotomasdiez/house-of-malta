@@ -7,7 +7,8 @@
     loop
     muted
     playsinline
-    poster="/preview.png"></video>
+    poster="/preview.png"
+    id="hero-video"></video>
   <!-- OVERLAY TO MAKE VIDEO DARKER -->
   <div class="absolute top-0 left-0 w-full h-full bg-black/50"></div>
   <!-- OVERLAP TITLE HERE -->
@@ -32,3 +33,17 @@
     </div>
   </div>
 </section>
+
+<script>
+  const video = document.getElementById('hero-video') as HTMLVideoElement
+  const playButton = document.getElementById('playButton')
+
+  if (playButton) {
+    playButton.addEventListener('click', () => {
+      if (video) {
+        video.play()
+        playButton.style.display = 'none'
+      }
+    })
+  }
+</script>
