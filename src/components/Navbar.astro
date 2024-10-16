@@ -5,14 +5,18 @@ import NavbarLink from './NavbarLink.astro'
 <nav
   class="absolute top-0 left-0 w-full bg-transparent transition-colors duration-300 z-50 lg:border-b lg:border-white/40"
 >
-  <div class="container mx-auto grid grid-cols-2 items-center max-w-screen-xl">
-    <div class="col-span-1 flex justify-center items-center lg:py-8">
-      <a href="/#home" class="text-tertiary text-xl font-semibold lg:text-3xl"
+  <div
+    class="container mx-auto flex justify-between items-center max-w-screen-xl lg:px-5 xl:px-0"
+  >
+    <div
+      class="col-span-1 flex justify-start items-center pl-5 lg:py-8 lg:pl-0"
+    >
+      <a href="/#home" class="text-white text-2xl font-semibold lg:text-3xl"
         >House of Gozo</a
       >
     </div>
     <div
-      class="col-span-1 hidden lg:flex items-center space-x-8 text-lg font-medium h-full"
+      class="col-span-1 hidden items-center space-x-8 text-lg font-medium h-full lg:flex"
     >
       <NavbarLink id="top" href="#top" class="navbar-link">
         Top Posters
@@ -20,19 +24,23 @@ import NavbarLink from './NavbarLink.astro'
       <NavbarLink id="all" href="#all" class="navbar-link">
         All Posters
       </NavbarLink>
-      <NavbarLink id="about" href="#about" class="navbar-link">
-        About
+      <NavbarLink
+        id="where-to-find-us"
+        href="#where-to-find-us"
+        class="navbar-link"
+      >
+        Where to find us
       </NavbarLink>
-      <NavbarLink id="contact" href="#contact" class="navbar-link">
-        Contact
+      <NavbarLink id="who-we-are" href="#who-we-are" class="navbar-link">
+        Who we are
       </NavbarLink>
     </div>
     <div class="col-span-1 flex justify-end lg:hidden">
       <button
         id="menu-toggle"
-        class="text-tertiary focus:outline-none flex items-center bg-primary p-2 rounded-bl-md"
+        class="text-tertiary focus:outline-none flex items-center bg-primary p-4 rounded-bl-xl"
       >
-        <span class="mr-2 text-xs">Menu</span>
+        <span class="mr-2 text-md">Menu</span>
         <svg
           class="w-6 h-6"
           fill="none"
@@ -55,32 +63,32 @@ import NavbarLink from './NavbarLink.astro'
     aria-hidden="true"
   >
     <div
-      class="h-screen flex flex-col w-4/5 ml-auto border-l border-tertiary/30 bg-gray-800 rounded-tl-md shadow-lg"
+      class="h-screen flex flex-col w-4/5 ml-auto bg-primary-lighter rounded-tl-md shadow-lg"
     >
       <div class="flex-grow overflow-y-auto divide-y divide-gray-700">
         <a
-          href="#"
+          href="/#top"
           class="block text-tertiary text-lg p-4 hover:bg-primary hover:text-white transition-colors"
         >
-          Home
+          Top Posters
         </a>
         <a
-          href="#"
+          href="/#all"
           class="block text-tertiary text-lg p-4 hover:bg-primary hover:text-white transition-colors"
         >
-          About
+          All Posters
         </a>
         <a
-          href="#"
+          href="/#where-to-find-us"
           class="block text-tertiary text-lg p-4 hover:bg-primary hover:text-white transition-colors"
         >
-          Services
+          Where to find us
         </a>
         <a
-          href="#"
+          href="/#who-we-are"
           class="block text-tertiary text-lg p-4 hover:bg-primary hover:text-white transition-colors"
         >
-          Contact
+          Who we are
         </a>
       </div>
     </div>

@@ -1,5 +1,58 @@
-<footer class="text-white pt-[100px] pb-12 bg-secondary">
-  <div class="container mx-auto">
-    <h2 class="text-4xl font-semibold text-center">House of Gozo Footer</h2>
+---
+import { FacebookIcon, InstagramIcon } from 'lucide-react'
+---
+
+<footer
+  class="text-white pt-[100px] pb-12 bg-primary border-t-2 border-primary-lighter"
+>
+  <div class="container mx-auto flex flex-col px-10">
+    <div
+      class="flex flex-col justify-between items-center gap-10 lg:flex-row mb-[30px] lg:mb-[60px]"
+    >
+      <div class="flex flex-col gap-2 justify-start items-start">
+        <h2 class="text-4xl font-semibold">House of Gozo</h2>
+        <p class="text-lg">Bringing Malta's beauty to your walls</p>
+      </div>
+      <div
+        class="grid grid-cols-1 gap-5 lg:grid-cols-4 text-white max-w-[600px] text-center items-center lg:gap-0"
+      >
+        <a
+          href="/#top"
+          class="text-lg bg-primary-lighter p-2 rounded-lg hover:underline lg:p-0 lg:bg-transparent w-full"
+          >Top Posters</a
+        >
+        <a
+          href="/#all"
+          class="text-lg bg-primary-lighter p-2 rounded-lg hover:underline lg:p-0 lg:bg-transparent w-full"
+          >All Posters</a
+        >
+        <a
+          href="/#where-to-find-us"
+          class="text-lg bg-primary-lighter p-2 rounded-lg hover:underline lg:p-0 lg:bg-transparent w-full"
+          >Where to find us</a
+        >
+        <a
+          href="/#who-we-are"
+          class="text-lg bg-primary-lighter p-2 rounded-lg hover:underline lg:p-0 lg:bg-transparent w-full"
+          >Who we are</a
+        >
+      </div>
+    </div>
+    <div class="w-full">
+      <div class="w-full h-[2px] bg-primary-lighter"></div>
+    </div>
+    <div
+      class="flex flex-col justify-center items-center gap-10 lg:flex-row lg:justify-between mt-[30px] lg:mt-[60px]"
+    >
+      <p>© 2024 House of Gozo | House of Malta | All rights reserved.</p>
+      <div class="flex flex-row gap-4">
+        <a href="#" class="text-lg">
+          <InstagramIcon width={30} height={30} />
+        </a>
+        <a href="#" class="text-lg">
+          <FacebookIcon width={30} height={30} />
+        </a>
+      </div>
+    </div>
   </div>
 </footer>
