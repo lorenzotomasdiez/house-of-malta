@@ -16,12 +16,60 @@ const { title } = Astro.props
 			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet"
 		/>
+		<title>{title}</title>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta
+			name="description"
+			content="Discover high-quality vintage posters of Gozo and Malta at House of Gozo. Explore our unique designs capturing the beauty of the Maltese Islands. Shop now!"
+		/>
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<link rel="canonical" href="https://www.houseofgozo.com/" />
+		<meta name="robots" content="index, follow" />
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Organization",
+				"name": "House of Gozo",
+				"url": "https://www.houseofgozo.com",
+				"logo": "https://www.houseofgozo.com/logo.png",
+				"contactPoint": {
+					"@type": "ContactPoint",
+					"telephone": "+3567769988",
+					"contactType": "Customer Service",
+					"email": "info@houseofgozo.com"
+				},
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "28 Triq Sir Mikelang Refalo, VCT 1430",
+					"addressLocality": "Victoria",
+					"addressCountry": "MT"
+				}
+			}
+		</script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"name": "House of Gozo",
+				"url": "https://www.houseofgozo.com",
+				"potentialAction": {
+					"@type": "SearchAction",
+					"target": "https://www.houseofgozo.com/?s={search_term_string}",
+					"query-input": "required name=search_term_string"
+				}
+			}
+		</script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebPage",
+				"name": "Vintage Posters of Gozo and Malta | House of Gozo",
+				"description": "Discover high-quality vintage posters of Gozo and Malta at House of Gozo.",
+				"url": "https://www.houseofgozo.com"
+			}
+		</script>
 	</head>
 	<body class="scroll-smooth">
 		<Navbar />

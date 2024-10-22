@@ -76,7 +76,7 @@ export const topPosters: Poster[] = [
 export const posters: Poster[] = [
   {
     src: "/posters/1.png",
-    alt: "The azure window",
+    alt: "Vintage Poster of The Azure Window in Gozo Island",
     title: "The azure window",
     description: "Gozo Island",
     realSrc: "/posters/1.png",
@@ -84,7 +84,7 @@ export const posters: Poster[] = [
   },
   {
     src: "/posters/2.png",
-    alt: "Blue lagoon",
+    alt: "Vintage Poster of Blue Lagoon in Comino Island",
     title: "Blue lagoon",
     description: "Comino Island",
     realSrc: "/posters/2.png",
@@ -92,7 +92,7 @@ export const posters: Poster[] = [
   },
   {
     src: "/posters/3.png",
-    alt: "From coast to coast",
+    alt: "Vintage Poster of From Coast to Coast in Maltese Islands",
     title: "From coast to coast",
     description: "Maltese Islands",
     realSrc: "/posters/3.png",
@@ -100,7 +100,7 @@ export const posters: Poster[] = [
   },
   {
     src: "/posters/4.png",
-    alt: "Dive",
+    alt: "Vintage Poster of Dive in Gozo Island",
     title: "Dive",
     description: "Gozo Island",
     realSrc: "/posters/4.png",
@@ -108,7 +108,7 @@ export const posters: Poster[] = [
   },
   {
     src: "/posters/5.png",
-    alt: "Ghajnsielem",
+    alt: "Vintage Poster of Ghajnsielem in Gozo Island",
     title: "Ghajnsielem",
     description: "Gozo Island",
     realSrc: "/posters/5.png",
@@ -116,7 +116,7 @@ export const posters: Poster[] = [
   },
   {
     src: "/posters/6.png",
-    alt: "Go with the flow",
+    alt: "Vintage Poster of Go with the Flow in Gozo Island",
     title: "Go with the flow",
     description: "Gozo Island",
     realSrc: "/posters/6.png",
@@ -124,7 +124,7 @@ export const posters: Poster[] = [
   },
   {
     src: "/posters/7.png",
-    alt: "Phising boats",
+    alt: "Vintage Poster of Fishing Boats in Gozo Island",
     title: "Phising boats",
     description: "Gozo Island",
     realSrc: "/posters/7.png",
@@ -132,7 +132,7 @@ export const posters: Poster[] = [
   },
   {
     src: "/posters/8.png",
-    alt: "Marlsarforn",
+    alt: "Vintage Poster of Marsalforn in Gozo Island",
     title: "Marlsarforn",
     description: "Gozo Island",
     realSrc: "/posters/8.png",
@@ -140,7 +140,7 @@ export const posters: Poster[] = [
   },
   {
     src: "/posters/9.png",
-    alt: "Citadella",
+    alt: "Vintage Poster of Citadella in Gozo Island",
     title: "Citadella",
     description: "Gozo Island",
     realSrc: "/posters/9.png",
@@ -148,7 +148,7 @@ export const posters: Poster[] = [
   },
   {
     src: "/posters/10.png",
-    alt: "Valletta 1",
+    alt: "Vintage Poster of Valletta in Malta",
     title: "Valletta",
     description: "Malta",
     realSrc: "/posters/10.png",
@@ -156,7 +156,7 @@ export const posters: Poster[] = [
   },
   {
     src: "/posters/11.png",
-    alt: "Ramla Bay",
+    alt: "Vintage Poster of Ramla Bay in Gozo Island",
     title: "Ramla Bay",
     description: "Gozo Island",
     realSrc: "/posters/11.png",
@@ -164,7 +164,7 @@ export const posters: Poster[] = [
   },
   {
     src: "/posters/12.png",
-    alt: "Sail away",
+    alt: "Vintage Poster of Sail away in Gozo Island",
     title: "Sail away",
     description: "Gozo Island",
     realSrc: "/posters/12.png",
@@ -172,7 +172,7 @@ export const posters: Poster[] = [
   },
   {
     src: "/posters/13.png",
-    alt: "Saint Jhon's",
+    alt: "Vintage Poster of Saint Jhon's in Gozo Island",
     title: "Saint Jhon's",
     description: "Gozo Island",
     realSrc: "/posters/13.png",
@@ -180,7 +180,7 @@ export const posters: Poster[] = [
   },
   {
     src: "/posters/14.png",
-    alt: "The Cittadella",
+    alt: "Vintage Poster of The Cittadella in Gozo Island",
     title: "The azure window",
     description: "Gozo Island",
     realSrc: "/posters/14.png",
@@ -188,7 +188,7 @@ export const posters: Poster[] = [
   },
   {
     src: "/posters/15.png",
-    alt: "ST George's Square",
+    alt: "Vintage Poster of ST George's Square in Gozo Island",
     title: "ST George's Square",
     description: "Gozo Island",
     realSrc: "/posters/15.png",
@@ -196,7 +196,7 @@ export const posters: Poster[] = [
   },
   {
     src: "/posters/16.png",
-    alt: "Ta' Pinu",
+    alt: "Vintage Poster of Ta' Pinu in Gozo Island",
     title: "Ta' Pinu",
     description: "Gozo Island",
     realSrc: "/posters/16.png",
@@ -204,7 +204,7 @@ export const posters: Poster[] = [
   },
   {
     src: "/posters/17.png",
-    alt: "Valletta Blue",
+    alt: "Vintage Poster of Valletta in Malta",
     title: "Valletta",
     description: "Malta",
     realSrc: "/posters/17.png",
@@ -212,7 +212,7 @@ export const posters: Poster[] = [
   },
   {
     src: "/posters/18.png",
-    alt: "Valletta Red",
+    alt: "Vintage Poster of Valletta in Malta",
     title: "Valletta",
     description: "Malta",
     realSrc: "/posters/18.png",
@@ -220,7 +220,7 @@ export const posters: Poster[] = [
   },
   {
     src: "/posters/21.png",
-    alt: "Xlendi Blue",
+    alt: "Vintage Poster of Xlendi in Gozo Island",
     title: "Xlendi",
     description: "Gozo Island",
     realSrc: "/posters/21.png",
@@ -228,7 +228,7 @@ export const posters: Poster[] = [
   },
   {
     src: "/posters/22.png",
-    alt: "Xlendi Red",
+    alt: "Vintage Poster of Xlendi in Gozo Island",
     title: "Xlendi",
     description: "Gozo Island",
     realSrc: "/posters/22.png",
