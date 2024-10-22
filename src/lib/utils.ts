@@ -16,11 +16,11 @@ export function cn(...inputs: ClassValue[]) {
 
 export const topPosters: Poster[] = [
   {
-    src: "/posters/1.png",
+    src: "/top/1.png",
     alt: "The azure window",
     title: "The azure window",
     description: "Gozo Island",
-    realSrc: "/real/1.jpg",
+    realSrc: "/top/1.mp4",
     realAlt: "The azure window real",
   },
   {

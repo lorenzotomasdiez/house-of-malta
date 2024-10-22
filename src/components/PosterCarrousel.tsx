@@ -6,7 +6,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
-import PosterItem from "./PosterItem"
+import TopPosterItem from "./TopPosterItem"
 import { topPosters } from "@/lib/utils"
 
 
@@ -26,10 +26,10 @@ export default function PosterCarrousel() {
         }}
         className="w-full"
       >
-        <CarouselContent className="-ml-2 md:-ml-4">
+        <CarouselContent className="-ml-2 md:-ml-4 scroll-auto hide-scrollbar">
           {topPosters.map((poster, index) => (
             <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-auto">
-              <PosterItem
+              <TopPosterItem
                 src={poster.src}
                 alt={poster.alt}
                 title={poster.title}

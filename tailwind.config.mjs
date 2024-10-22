@@ -81,7 +81,31 @@ export default {
     			lg: 'var(--radius)',
     			md: 'calc(var(--radius) - 2px)',
     			sm: 'calc(var(--radius) - 4px)'
-    		}
+    		},
+				keyframes: {
+					submerge: {
+						'0%': { opacity: '1', transform: 'scale(1)' },
+						'100%': { opacity: '0', transform: 'scale(0.95)' },
+					},
+					emerge: {
+						'0%': { opacity: '0', transform: 'scale(1.05)' },
+						'100%': { opacity: '1', transform: 'scale(1)' },
+					},
+					submergeReverse: {
+						'0%': { opacity: '0', transform: 'scale(0.95)' },
+						'100%': { opacity: '1', transform: 'scale(1)' },
+					},
+					emergeReverse: {
+						'0%': { opacity: '1', transform: 'scale(1)' },
+						'100%': { opacity: '0', transform: 'scale(1.05)' },
+					},
+				},
+				animation: {
+					submerge: 'submerge 2s ease-in-out forwards',
+					emerge: 'emerge 2s ease-in-out forwards',
+					submergeReverse: 'submergeReverse 2s ease-in-out forwards',
+					emergeReverse: 'emergeReverse 2s ease-in-out forwards',
+				},
     	}
     },
   plugins: [require("tailwindcss-animate")],

@@ -1,15 +1,13 @@
 ---
 interface Props {
-  id: string
   href: string
   class?: string
 }
 
-const { href, class: classList, id }: Props = Astro.props
+const { href, class: classList }: Props = Astro.props
 ---
 
 <a
-  id={id}
   href={href}
   class:list={[
     'h-full flex items-center justify-center transition-all duration-300 hover:border-b-2 hover:border-white text-white',
