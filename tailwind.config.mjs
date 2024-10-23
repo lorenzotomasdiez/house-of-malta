@@ -99,12 +99,17 @@ export default {
 						'0%': { opacity: '1', transform: 'scale(1)' },
 						'100%': { opacity: '0', transform: 'scale(1.05)' },
 					},
+					zoomIn: {
+						'0%': { transform: 'scale(1)' },
+						'100%': { transform: 'scale(1.05)' },
+					},
 				},
 				animation: {
 					submerge: 'submerge 2s ease-in-out forwards',
 					emerge: 'emerge 2s ease-in-out forwards',
 					submergeReverse: 'submergeReverse 2s ease-in-out forwards',
 					emergeReverse: 'emergeReverse 2s ease-in-out forwards',
+					zoomIn: 'zoomIn 1s ease-in-out forwards',
 				},
     	}
     },

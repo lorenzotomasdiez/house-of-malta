@@ -2,7 +2,7 @@ import type { Poster } from "@/lib/utils"
 
 export default function PosterItem({ src, alt, title, description }: Poster) {
   return (
-    <div className="flex flex-col gap-5 items-center justify-center mx-5">
+    <div className="flex flex-col gap-5 items-center justify-center mx-5 hover:animate-zoomIn">
       <div
         className="[perspective:1000px] relative rounded-xl shadow-xl shadow-black/10"
       >

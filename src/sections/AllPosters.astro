@@ -3,13 +3,15 @@ import PosterItem from '@/components/PosterItem'
 import { posters } from '@/lib/utils'
 ---
 
-<section class="container mx-auto" id="all">
+<section class="container mx-auto !scroll-auto" id="all">
   <h2
     class="text-2xl font-semibold px-4 lg:text-4xl text-center my-[50px] text-white"
   >
     Explore All Our Gozo and Malta Posters
   </h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 lg:gap-4">
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 lg:gap-4 lg:gap-y-10"
+  >
     {posters.map((poster) => <PosterItem {...poster} client:load />)}
   </div>
 </section>
